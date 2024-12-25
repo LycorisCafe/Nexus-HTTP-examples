@@ -24,6 +24,11 @@
     <artifactId>nexus-http-examples</artifactId>
     <version>1.0.0</version>
 
+    <name>Nexus-HTTP Examples</name>
+    <description>Tutorial examples for Nexus-HTTP</description>
+    <url>https://github.com/LycorisCafe/nexus-http-examples</url>
+    <inceptionYear>2024</inceptionYear>
+
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
@@ -37,4 +42,37 @@
             <version>1.0.0</version>
         </dependency>
     </dependencies>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>NaveenB2004</id>
+            <name>Naveen Balasooriya</name>
+            <email>naveennbalasooriya2004@gmail.com</email>
+            <url>https://github.com/NaveenB2004</url>
+            <timezone>UTC+05:30</timezone>
+            <properties>
+                <!-- messenger platform -->
+                <Telegram>https://t.me/NaveenB2004</Telegram>
+            </properties>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/LycorisCafe/nexus-http-examples.git</connection>
+        <developerConnection>scm:git:https://github.com/LycorisCafe/nexus-http-examples.git</developerConnection>
+        <url>https://github.com/LycorisCafe/nexus-http-examples</url>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub Issue Management</system>
+        <url>https://github.com/LycorisCafe/nexus-http-examples/issues</url>
+    </issueManagement>
 </project>

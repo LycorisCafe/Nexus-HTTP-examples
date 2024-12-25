@@ -17,6 +17,7 @@
 package io.github.lycoriscafe;
 
 import io.github.lycoriscafe.nexus.http.HttpServer;
+import io.github.lycoriscafe.nexus.http.core.headers.auth.scheme.basic.BasicAuthentication;
 import io.github.lycoriscafe.nexus.http.helper.configuration.HttpServerConfiguration;
 import io.github.lycoriscafe.nexus.http.helper.scanners.ScannerException;
 
@@ -26,7 +27,8 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) throws ScannerException, SQLException, IOException {
         // HTTP server initialization
-        var httpServerConfiguration = new HttpServerConfiguration("io.github.lycoriscafe.endpoints", "NexusTemp");
+        var httpServerConfiguration = new HttpServerConfiguration("io.github.lycoriscafe.endpoints", "NexusTemp")
+                .addDefaultAuthentication(new BasicAuthentication("Protected Realm"));
         var httpServer = new HttpServer(httpServerConfiguration);
         httpServer.initialize();
 
