@@ -18,6 +18,7 @@ package io.github.lycoriscafe.crud;
 
 import io.github.lycoriscafe.nexus.http.core.HttpEndpoint;
 import io.github.lycoriscafe.nexus.http.core.headers.content.Content;
+import io.github.lycoriscafe.nexus.http.core.headers.content.ExpectContent;
 import io.github.lycoriscafe.nexus.http.core.headers.content.MultipartFormData;
 import io.github.lycoriscafe.nexus.http.core.requestMethods.annotations.DELETE;
 import io.github.lycoriscafe.nexus.http.core.requestMethods.annotations.GET;
@@ -34,6 +35,7 @@ import java.util.List;
 public class Endpoint {
     @POST("/addStudent")
     @SuppressWarnings("unchecked")
+    @ExpectContent("multipart/form-data")
     public static HttpResponse addStudent(HttpPostRequest request,
                                           HttpResponse response) {
         String name = null, address = null;
@@ -75,6 +77,7 @@ public class Endpoint {
 
     @POST("/updateStudent")
     @SuppressWarnings("unchecked")
+    @ExpectContent("multipart/form-data")
     public static HttpResponse updateStudent(HttpPostRequest request,
                                              HttpResponse response) {
         int id = Integer.parseInt(request.getParameters().get("id"));
