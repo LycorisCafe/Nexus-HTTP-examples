@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 Lycoris Café
+ * Copyright 2025 Lycoris Café
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,8 +20,8 @@ import io.github.lycoriscafe.nexus.http.core.HttpEndpoint;
 import io.github.lycoriscafe.nexus.http.core.headers.auth.Authenticated;
 import io.github.lycoriscafe.nexus.http.core.headers.auth.scheme.basic.BasicAuthorization;
 import io.github.lycoriscafe.nexus.http.core.requestMethods.annotations.GET;
-import io.github.lycoriscafe.nexus.http.engine.ReqResManager.httpReq.HttpGetRequest;
-import io.github.lycoriscafe.nexus.http.engine.ReqResManager.httpRes.HttpResponse;
+import io.github.lycoriscafe.nexus.http.engine.reqResManager.httpReq.HttpGetRequest;
+import io.github.lycoriscafe.nexus.http.engine.reqResManager.httpRes.HttpResponse;
 
 @HttpEndpoint("/")
 public class AuthenticatedEndpoints {
